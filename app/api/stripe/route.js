@@ -37,8 +37,8 @@ export const POST = async (request) => {
             quantity:item.amount
           }
         }),
-        success_url: `http://localhost:3000/success`,
-        cancel_url: `http://localhost:3000/?canceled=true`,
+        success_url: `https://ecommerce-store-livid.vercel.app/success`,
+        cancel_url: `https://ecommerce-store-livid.vercel.app/?canceled=true`,
       }
       // Create Checkout Sessions from body params.
       const session = await stripe.checkout.sessions.create(params);
